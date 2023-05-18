@@ -1,0 +1,145 @@
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  font-weight: 800;
+  color: rgb(40, 40, 40);
+}
+h2 {
+  font-weight: 700;
+  color: rgb(40, 40, 40);
+}
+h3 {
+  font-weight: 600;
+  color: rgb(45, 45, 45);
+}
+h4 {
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+}
+
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  color: rgb(40, 40, 40);
+  border: 1px rgb(202, 202, 202, 0.8) solid;
+  border-collapse: collapse;
+  background-color: rgb(202, 202, 202, 0.1);
+  padding: 5px 40px;
+  font-size: 18px;
+}
+td {
+  font-weight: 600;
+  color: rgb(45, 45, 45);
+  border: 1px rgb(202, 202, 202, 0.8) solid;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgb(202, 202, 202, 0.05);
+  font-size: 18px;
+}
+.bg-image {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  background-position: center;
+}
+.content {
+  background: linear-gradient(rgba(74, 57, 224, 0.8), rgba(95, 81, 226, 0.8));
+  align-items: center;
+  z-index: 1;
+  gap: 25px;
+  padding-top: 25px;
+}
+.current-content {
+  align-items: center;
+  width: 30%;
+  background-color: rgb(202, 202, 202, 0.1);
+  padding: 25px 2%;
+  border-radius: 20px;
+  border: 1px rgb(202, 202, 202, 0.8) solid;
+}
+.footer{
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+  align-items: center;
+  background-color: rgb(202, 202, 202, 0.3);
+  z-index: 1;
+}
+@media screen  and (max-width:1600px) {
+
+  td{
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  
+}
+@media screen and (max-width:1000px) {
+    h1{
+      font-size: 25px;
+    }
+    h2{
+      font-size: 22px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    h4{
+      font-size: 18px;
+    }
+    th{
+      font-size: 16px;
+    }
+    td{
+      font-size: 14px;
+      padding: 2.5px 5px;
+    }
+    .current-content {
+      width: 50%;
+    }
+    td img{
+      width: 90px;
+    }
+}
+@media screen and (max-width:600px) {
+  h1{
+    font-size: 22px;
+  }
+  h2{
+    font-size: 20px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  h4{
+    font-size: 16px;
+  }
+  th{
+    font-size: 12px;
+    padding: 0px 2px;
+  }
+  td{
+    font-size: 12px;
+  }
+  td img{
+    width: 50px;
+  }
+  .current-content {
+    width: 80%;
+  }
+
+}
